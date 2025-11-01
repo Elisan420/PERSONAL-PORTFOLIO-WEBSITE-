@@ -1,0 +1,168 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  background-color: #0a192f;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
+  text-shadow: 1.5px 1px 2px red;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #6c63ff, #00bcd4);
+  color: #fff;
+  padding: 5rem 1rem;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-content h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: clamp(160px, 45vw, 300px);
+  height: clamp(160px, 45vw, 300px);
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* BUTTON */
+.btn {
+  background-color: #ff4081;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #e73370;
+  transform: translateY(-3px);
+}
+
+/* ABOUT */
+.about {
+  background-color: #fff;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* SKILLS */
+.skills {
+  background-color: #e0e0e0;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+.skills h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.skills ul {
+  list-style: none;
+}
+
+/* PROJECTS */
+.projects {
+  background-color: #fafafa;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+.project-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  background-color: navajowhite;
+  transform: scale(1.05);
+}
+
+
+/* CONTACT */
+.contact {
+  background-color: #0a192f;
+  color: #fff;
+}
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 3rem 1rem;
+  }
+}
