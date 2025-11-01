@@ -6,19 +6,25 @@
   scroll-behavior: smooth;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f4f9;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .section {
   width: 100%;
-  padding: 4rem 1.5rem;
-  text-align: center;
   max-width: 1200px;
   margin-inline: auto;
+  padding: 4rem 1.5rem;
+  text-align: center;
 }
 
 /* HEADER */
@@ -31,9 +37,7 @@ body {
   text-shadow: 1.5px 1px 2px red;
   width: 100%;
   max-width: 1000px;
-  margin: auto;
   margin-inline: auto;
-  padding-inline: 1rem;
 }
 
 /* HERO SECTION */
@@ -41,11 +45,15 @@ body {
   background: linear-gradient(135deg, #6c63ff, #00bcd4);
   color: #fff;
   padding: 5rem 1rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero-content {
+  width: 100%;
   max-width: 700px;
-  margin: auto;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .hero-content h2 {
@@ -66,11 +74,13 @@ body {
   margin-bottom: 1.5rem;
 }
 
+/* HERO BUTTONS */
 .hero-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 /* BUTTON */
@@ -83,6 +93,7 @@ body {
   font-weight: bold;
   transition: all 0.3s ease;
 }
+
 .btn:hover {
   background-color: #e73370;
   transform: translateY(-3px);
@@ -91,9 +102,8 @@ body {
 /* ABOUT */
 .about {
   background-color: #fff;
-  max-width: 1000px;
-  margin: auto;
   width: 100%;
+  max-width: 800px;
   margin-inline: auto;
   padding-inline: 1rem;
 }
@@ -101,19 +111,25 @@ body {
 /* SKILLS */
 .skills {
   background-color: #e0e0e0;
+  width: 100%;
 }
+
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  max-width: 2000px;
-  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
   text-align: left;
+  padding-inline: 1rem;
 }
+
 .skills h3 {
   text-align: center;
   margin-bottom: 1rem;
 }
+
 .skills ul {
   list-style: none;
 }
@@ -121,14 +137,19 @@ body {
 /* PROJECTS */
 .projects {
   background-color: #fafafa;
+  width: 100%;
 }
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  width: 100%;
   max-width: 1100px;
-  margin: auto;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
+
 .project-card {
   background-color: #fff;
   border-radius: 15px;
@@ -136,17 +157,20 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+
 .project-card:hover {
   background-color: navajowhite;
   transform: scale(1.05);
 }
 
-
 /* CONTACT */
 .contact {
   background-color: #0a192f;
   color: #fff;
+  width: 100%;
+  overflow: hidden;
 }
+
 .contact-buttons {
   display: flex;
   justify-content: center;
@@ -162,8 +186,8 @@ body {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
+  width: 100%;
   max-width: 1000px;
-  
   margin-inline: auto;
 }
 
@@ -172,7 +196,12 @@ body {
   .skills-container {
     grid-template-columns: 1fr;
   }
+
   .hero {
     padding: 3rem 1rem;
   }
-}
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  }
