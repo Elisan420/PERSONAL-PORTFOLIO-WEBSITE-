@@ -17,6 +17,7 @@ body {
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 300%;
 }
 
 .section {
@@ -36,7 +37,7 @@ body {
   font-size: clamp(1.2rem, 4vw, 2.2rem);
   text-shadow: 1.5px 1px 2px red;
   width: 100%;
-  max-width: 1000px;
+  max-width: 300%;
   margin-inline: auto;
 }
 
@@ -103,7 +104,7 @@ body {
 .about {
   background-color: #fff;
   width: 100%;
-  max-width: 800px;
+  max-width: 300%;
   margin-inline: auto;
   padding-inline: 1rem;
 }
@@ -119,7 +120,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   width: 100%;
-  max-width: 900px;
+  max-width: 300%;
   margin-inline: auto;
   text-align: left;
   padding-inline: 1rem;
@@ -145,7 +146,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   width: 100%;
-  max-width: 1100px;
+  max-width: 300%;
   margin-inline: auto;
   padding-inline: 1rem;
 }
